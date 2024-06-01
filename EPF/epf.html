@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPF Calculator</title>
+    <link rel="stylesheet" href="./epf.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>EPF Calculator</h1>
+        <div class="form-group">
+            <label for="monthlyContribution">Monthly Contribution (₹):</label>
+            <input type="number" id="monthlyContribution" placeholder="Enter monthly contribution">
+        </div>
+        <div class="form-group">
+            <label for="annualInterestRate">Annual Interest Rate (%):</label>
+            <input type="number" id="annualInterestRate" placeholder="Enter annual interest rate">
+        </div>
+        <div class="form-group">
+            <label for="investmentDuration">Investment Duration (years):</label>
+            <input type="number" id="investmentDuration" placeholder="Enter duration in years">
+        </div>
+        <button onclick="calculateEPF()">Calculate EPF</button>
+        <div id="result" class="result" style="display:none;">
+            <h2>Total EPF Amount: ₹<span id="epfAmount"></span></h2>
+        </div>
+    </div>
+    <script src="./epf.js"></script>
+</body>
+
+</html>
